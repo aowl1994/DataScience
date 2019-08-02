@@ -1,0 +1,108 @@
+
+boardsize 3
+clear_board
+timelimit 50
+1 solve
+#?[b a1|b a2|b a3|b b1|b b2|b b3|b c1|b c2|b c3]
+#all moves win for black for boardsize 3
+genmove b
+2 solve
+#?[b]
+#the result remain the same
+genmove w
+genmove b
+genmove w
+genmove b
+genmove w
+genmove b
+3 solve
+#?[b]
+#the result remain the same
+4 genmove w
+#?[resign]
+# same as prediction loss for white all the time
+
+
+boardsize 3
+clear_board
+timelimit 50
+play b a1
+play w a2
+play b a3
+play w b2
+play b b1
+play w c3
+5 genmove b
+#?[c1|c2]
+#both moves win for black, check correctness of genmove
+6 genmove w
+#?[resign]
+# no legal moves for white player
+
+boardsize 4
+clear_board
+timelimit 1
+play b a1
+7 solve
+#?[unknown]
+#hard to solve, change time limit
+timelimit 5
+8 solve
+#?[unknown]
+#still too hard to solve
+
+
+
+boardsize 7
+clear_board
+timelimit 50
+play b a1
+play w a2
+play b a3
+play w a4
+play b a5
+play w a6
+play b a7
+play w b2
+play b b3
+play w b4
+play b b5
+play w b6
+play b b7
+play w c2
+play b c3
+play w c4
+play b c5
+play w c6
+play b c7
+play w d2
+play b d3
+play w d4
+play b d5
+play w d6
+play b b1
+play w g3
+play b d1
+play w g5
+play b e1
+play w e2
+play b e3
+play w e4
+play b e5
+play w e6
+play b e7
+play w f1
+play b f2
+play w f7
+play b f6
+play w g2
+play b f3
+play w g4
+play b g6
+9 solve
+#?[b]
+#for large size board, still correct, win for black
+10 genmove w
+#?[g1] 
+#only legal move, c1 d7 f4 f5 are all captures
+

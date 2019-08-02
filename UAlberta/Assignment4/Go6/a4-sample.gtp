@@ -1,0 +1,90 @@
+boardsize 5
+clear_board
+
+play b c3
+
+play w c2
+
+play b d2
+
+play w b3
+
+play b b4
+
+play w c4
+
+play b d3
+
+play w d4
+
+play b e4
+
+play w b5
+
+play b a4
+
+play w b1
+
+play b c5
+
+play w d5
+
+play b a3
+
+play w d1
+
+play b b2
+
+play w a2
+
+10 policy_moves
+#? [a1 0.74976 c1 0.17378 b3 0.02501 e3 0.01386 e2 0.01103 a5 0.01049 e1 0.01029 e5 0.00578]
+
+play b a1
+
+play w e2
+
+play b c1
+
+play w c5
+
+play b a5
+
+play w e1
+
+play b e5
+
+play w b5
+
+play b c5
+
+20 policy_moves
+#? [c4 0.55066 d5 0.26048 d4 0.18885]
+
+play w d5
+
+play b c4
+
+30 policy_moves
+#? [pass 1.00000]
+# comment: there is no other moves than pass for white
+
+play w pass
+
+40 policy_moves
+#? [d4 0.76052 e3 0.23948]
+# comment: there are still moves available for black
+
+play b d4
+
+50 policy_moves
+#? [pass 1.00000]
+# comment: there is no other moves than pass for white
+
+play w pass
+
+60 policy_moves
+#? [e3 1.00000]
+# comment: there are still moves available for black
+
+

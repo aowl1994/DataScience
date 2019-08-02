@@ -1,0 +1,37 @@
+# public test file to illustrate the differences between Go and NoGo.
+# This test is written for NoGo.
+
+boardsize 7
+clear_board
+
+play w b2
+#10 legal_moves w
+#? [a1 a2 b1 b2 b3 c1 c2 c3]
+#showboard
+play w b1
+#20 legal_moves b
+#? [a1 a2 b1 b2 c1 c2 c3]
+# So far, all empty points are legal in NoGo rules.
+#showboard
+
+#showboard
+play w a2
+showboard
+#legal_moves w
+play b a1
+play w a2
+play w b3
+play b a3
+play w a4
+showboard
+legal_moves w
+#legal_moves b
+play b
+play b d2 f 
+play c3 d
+play b c99
+play b lw
+play b /c
+#boardsize 26
+#play b a1
+play d d g

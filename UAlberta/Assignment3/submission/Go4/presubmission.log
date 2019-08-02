@@ -1,0 +1,16 @@
+Script started on Tue Mar 21 14:33:13 2017
+ug08[temp]:exitpython3 Go4/Go4.py < Go4/a3-sample.gtp[4Pa3-sample.gtp[C[C[C[C[C[C[C[C[C[C[C[17Ptar -xvzf a3.tgz [C[C[C[C[C[C[C[C[C[C[C[7P./match.shtar -xvzf a3.tgz 
+Go4/
+Go4/gtp_connection.py
+Go4/PolicyPlayer.py
+Go4/board.py
+Go4/pattern.py
+Go4/a3-sample.gtp
+Go4/board_util.py
+Go4/a3-ko-example.gtp
+Go4/Go4.py
+ug08[temp]:gogui-regree[Kss Go4/Go4.py Go4/gtp_connection.py [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ka3-sample.gtp 
+ug08[temp]:exit
+exit
+
+Script done on Tue Mar 21 14:33:50 2017

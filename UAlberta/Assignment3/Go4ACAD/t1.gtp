@@ -1,0 +1,37 @@
+boardsize 5
+clear_board
+
+10 policy_moves
+#? [Random a1 a2 a3 a4 a5 b1 b2 b3 b4 b5 c1 c2 c3 c4 c5 d1 d2 d3 d4 d5 e1 e2 e3 e4 e5]
+
+play b e5
+
+20 policy_moves
+#? [Random a1 a2 a3 a4 a5 b1 b2 b3 b4 b5 c1 c2 c3 c4 c5 d1 d2 d3 d4 d5 e1 e2 e3 e4]
+
+play w d5
+
+30 policy_moves
+#? [AtariDefense e4]
+
+play b e4
+
+40 policy_moves
+#? [Pattern d4]
+
+play w e3
+
+50 policy_moves
+#? [AtariDefense d4]
+
+play b d4
+
+60 policy_moves
+#? [AtariDefense c5]
+
+play w c4
+
+70 policy_moves
+#? [AtariDefense c5 d3]
+
+showboard

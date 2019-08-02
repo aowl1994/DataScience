@@ -1,0 +1,325 @@
+<html>
+<head>
+<title>Output: nogosolvertest.gtp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="gogui-regress 1.4.9 (http://gogui.sf.net)">
+<style type="text/css">
+<!--
+body { margin:0; }
+span.comment { color:#999999; }
+span.fail { font-weight:bold; color:#ff5454; }
+span.error { font-weight:bold; color:#ffa954; }
+span.stderr { color:#666666; }
+span.invalid { background:#ff5454;}
+span.pass { font-weight:bold; color:#5eaf5e; }
+span.test { font-weight:bold; }
+-->
+</style>
+</head>
+<body bgcolor="white" text="black" link="#0000ee" vlink="#551a8b">
+<table border="0" width="100%" bgcolor="#91aee8" border="0">
+<tr><td>
+<h1>Output: nogosolvertest.gtp</h1>
+</td></tr>
+</table>
+<table width="100%" bgcolor="#e0e0e0">
+<tr><th align="left">Date:</th><td>February 28, 2017 3:41:46 PM MST</td></tr>
+<tr><th align="left">Host:</th><td>uc10 (Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz)</td></tr>
+<tr><th align="left" valign="top">Command:</th>
+<td valign="top"><tt>Go1.py</tt></td></tr>
+</table>
+<pre style="margin:1em">
+name
+= NoGo2
+
+version
+= 0.1
+
+cputime
+? Unknown command
+
+</pre>
+<hr style="margin:1em" size="1">
+<pre style="margin:1em">
+
+<span class="command">boardsize 3
+</span>= 
+
+<span class="command">clear_board
+</span>= 
+
+<span class="command">timelimit 50
+</span>= 
+
+<span class="test"><a name="1">1 solve
+</a>#?[b a1|b a2|b a3|b b1|b b2|b b3|b c1|b c2|b c3]
+= b a1
+
+</span><span class="comment">#all moves win for black for boardsize 3
+</span><span class="command">genmove b
+</span>= a1
+
+<span class="test"><a name="2">2 solve
+</a>#?[b]
+= b 
+
+</span><span class="comment">#the result remain the same
+</span><span class="command">genmove w
+</span>= b1
+
+<span class="command">genmove b
+</span>= c1
+
+<span class="command">genmove w
+</span>= b2
+
+<span class="command">genmove b
+</span>= a2
+
+<span class="command">genmove w
+</span>= c3
+
+<span class="command">genmove b
+</span>= a3
+
+<span class="test"><a name="3">3 solve
+</a>#?[b]
+= b 
+
+</span><span class="comment">#the result remain the same
+</span><span class="test"><a name="4">4 genmove w
+</a>#?[resign]
+= resign
+
+</span><span class="comment"># same as prediction loss for white all the time
+</span>
+
+<span class="command">boardsize 3
+</span>= 
+
+<span class="command">clear_board
+</span>= 
+
+<span class="command">timelimit 50
+</span>= 
+
+<span class="command">play b a1
+</span>= 
+
+<span class="command">play w a2
+</span>= 
+
+<span class="command">play b a3
+</span>= 
+
+<span class="command">play w b2
+</span>= 
+
+<span class="command">play b b1
+</span>= 
+
+<span class="command">play w c3
+</span>= 
+
+<span class="test"><a name="5">5 genmove b
+</a>#?[c1|c2]
+= c1
+
+</span><span class="comment">#both moves win for black, check correctness of genmove
+</span><span class="test"><a name="6">6 genmove w
+</a>#?[resign]
+= resign
+
+</span><span class="comment"># no legal moves for white player
+</span>
+<span class="command">boardsize 4
+</span>= 
+
+<span class="command">clear_board
+</span>= 
+
+<span class="command">timelimit 1
+</span>= 
+
+<span class="command">play b a1
+</span>= 
+
+<span class="test"><a name="7">7 solve
+</a>#?[unknown]
+= unknown 
+
+</span><span class="comment">#hard to solve, change time limit
+</span><span class="command">timelimit 5
+</span>= 
+
+<span class="test"><a name="8">8 solve
+</a>#?[unknown]
+= unknown 
+
+</span><span class="comment">#still too hard to solve
+</span>
+
+
+<span class="command">boardsize 7
+</span>= 
+
+<span class="command">clear_board
+</span>= 
+
+<span class="command">timelimit 50
+</span>= 
+
+<span class="command">play b a1
+</span>= 
+
+<span class="command">play w a2
+</span>= 
+
+<span class="command">play b a3
+</span>= 
+
+<span class="command">play w a4
+</span>= 
+
+<span class="command">play b a5
+</span>= 
+
+<span class="command">play w a6
+</span>= 
+
+<span class="command">play b a7
+</span>= 
+
+<span class="command">play w b2
+</span>= 
+
+<span class="command">play b b3
+</span>= 
+
+<span class="command">play w b4
+</span>= 
+
+<span class="command">play b b5
+</span>= 
+
+<span class="command">play w b6
+</span>= 
+
+<span class="command">play b b7
+</span>= 
+
+<span class="command">play w c2
+</span>= 
+
+<span class="command">play b c3
+</span>= 
+
+<span class="command">play w c4
+</span>= 
+
+<span class="command">play b c5
+</span>= 
+
+<span class="command">play w c6
+</span>= 
+
+<span class="command">play b c7
+</span>= 
+
+<span class="command">play w d2
+</span>= 
+
+<span class="command">play b d3
+</span>= 
+
+<span class="command">play w d4
+</span>= 
+
+<span class="command">play b d5
+</span>= 
+
+<span class="command">play w d6
+</span>= 
+
+<span class="command">play b b1
+</span>= 
+
+<span class="command">play w g3
+</span>= 
+
+<span class="command">play b d1
+</span>= 
+
+<span class="command">play w g5
+</span>= 
+
+<span class="command">play b e1
+</span>= 
+
+<span class="command">play w e2
+</span>= 
+
+<span class="command">play b e3
+</span>= 
+
+<span class="command">play w e4
+</span>= 
+
+<span class="command">play b e5
+</span>= 
+
+<span class="command">play w e6
+</span>= 
+
+<span class="command">play b e7
+</span>= 
+
+<span class="command">play w f1
+</span>= 
+
+<span class="command">play b f2
+</span>= 
+
+<span class="command">play w f7
+</span>= 
+
+<span class="command">play b f6
+</span>= 
+
+<span class="command">play w g2
+</span>= 
+
+<span class="command">play b f3
+</span>= 
+
+<span class="command">play w g4
+</span>= 
+
+<span class="command">play b g6
+</span>= 
+
+<span class="test"><a name="9">9 solve
+</a>#?[b]
+= b 
+
+</span><span class="comment">#for large size board, still correct, win for black
+</span><span class="test"><a name="10">10 genmove w
+</a>#?[g1]
+= g1
+
+</span><span class="comment">#only legal move, c1 d7 f4 f5 are all captures
+</span>
+</pre>
+<hr style="margin:1em" size="1">
+<pre style="margin:1em">
+cputime
+? Unknown command
+
+quit
+= 
+
+</pre>
+<hr style="margin-bottom:0" size="1">
+<p style="margin-top:1; margin-right:5" align="right"><i><small>Generated on 2/28/17 3:41 PM by gogui-regress 1.4.9 (<a href="http://gogui.sf.net">http://gogui.sf.net</a>)</small></i></p>
+</body>
+</html>

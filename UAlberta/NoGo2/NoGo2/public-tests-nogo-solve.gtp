@@ -1,0 +1,134 @@
+
+boardsize 3
+clear_board
+play b a3
+play w c2
+play b b3
+play w c1
+play b b2
+play w b1
+10 solve
+#?[b a1]
+
+
+boardsize 3
+clear_board
+play b b3
+play w c2
+play b b2
+play w c3
+play b a2
+play w b1
+20 solve
+#?[b a1]
+
+
+boardsize 3
+clear_board
+play b a3
+play w c3
+play b a2
+play w b3
+play b b2
+play w c1
+30 solve
+#?[b b1]
+
+
+boardsize 3
+clear_board
+play b a3
+play w b1
+play b a2
+play w c2
+play b b2
+play w c1
+40 solve
+#?[b c3]
+
+
+boardsize 4
+clear_board
+play b b3
+play w c2
+play b c3
+play w b2
+play b a2
+play w d3
+play b b4
+play w a1
+play b a3
+play w d1
+play b c1
+play w d4
+play b a4
+50 solve
+#?[w d2]
+
+boardsize 4
+clear_board
+play b a3
+play w d4
+play b c3
+play w b3
+play b d1
+play w b2
+play b d2
+play w c2
+play b a2
+play w b4
+play b b1
+play w c4
+play b c1
+play w a4
+60 solve
+#?[b a1]
+
+
+boardsize 4
+clear_board
+play b b1
+play w c4
+play b c2
+play w b3
+play b c3
+play w a1
+play b c1
+play w d1
+play b b2
+play w d2
+play b a3
+play w a4
+70 solve
+#?[b d4]
+
+boardsize 5
+clear_board
+play b a3
+play w a1
+play b a4
+play w b4
+play b a5
+play w b5
+play b b1
+play w c1
+play b b2
+play w c2
+play b b3
+play w c3
+play b c4
+play w c5
+play b e1
+play w e2
+play b d1
+play w d3
+play b e3
+play w d5
+play b d4
+80 solve
+#?[w e5]
+
+
+
+
+

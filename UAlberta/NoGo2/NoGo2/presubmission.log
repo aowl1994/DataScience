@@ -1,0 +1,23 @@
+Script started on Tue 28 Feb 2017 03:57:49 PM MST
+uc10[c496]:quitcd NoGo2/tar xvzf a2.tgz 
+NoGo2/
+NoGo2/board_util.pyc
+NoGo2/board.py
+NoGo2/board_util.py
+NoGo2/nogosolvertest.gtp.out.html
+NoGo2/nogosolvertest.gtp
+NoGo2/index.html
+NoGo2/a2-sample.gtp
+NoGo2/nogosolvertest.gtp.html
+NoGo2/public-tests-nogo-solve.gtp
+NoGo2/gtp_connection.py
+NoGo2/Go1.py
+NoGo2/board.pyc
+NoGo2/readme.txt
+uc10[c496]:cd NoGo2/
+uc10[NoGo2]:gogui-regress gtp_connection.py [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KGo1.py a2-sample.gtp 
+uc10[NoGo2]:gogui-regress Go1.py a2-sample.gtp [1P[1P[1P[1P[1P[1P[C[C[C[C[1P [1P [1P [1P [1P [1P [1P b [1P n o gosolvertest.gtp 
+uc10[NoGo2]:exit
+exit
+
+Script done on Tue 28 Feb 2017 04:01:28 PM MST
